@@ -3,31 +3,29 @@ import Driveable from '../interfaces/Driveable.js';
 
 // Vehicle class that implements Driveable interface
 class Vehicle implements Driveable {
-  // Declare properties of the Vehicle class
   started: boolean;
   currentSpeed: number;
 
-  // Constructor for the Vehicle class
+  //TODO  Constructor for the Vehicle class
   constructor() {
     this.started = false;
     this.currentSpeed = 0;
   }
 
-  // Method to print vehicle details
+  // TODO Method to print vehicle details
   printDetails(): void {
     console.log(`Vehicle started: ${this.started}`);
     console.log(`Vehicle current speed: ${this.currentSpeed} mph`);
   }
 
-  // Method to start the vehicle
+  //TODO Method to start the vehicle
   start(): void {
     this.started = true;
     console.log('Vehicle started');
   }
 
-  // Method to accelerate the vehicle
+  // TODO Method to accelerate the vehicle
   accelerate(change: number): void {
-    // Check if the vehicle is started
     if (this.started) {
       this.currentSpeed += change;
       console.log(`Vehicle accelerated to ${this.currentSpeed} mph`);
@@ -36,9 +34,8 @@ class Vehicle implements Driveable {
     }
   }
 
-  // Method to decelerate the vehicle
+  // TODO Method to decelerate the vehicle
   decelerate(change: number): void {
-    // Check if the vehicle is started
     if (this.started) {
       this.currentSpeed -= change;
       console.log(`Vehicle decelerated to ${this.currentSpeed} mph`);
@@ -47,16 +44,15 @@ class Vehicle implements Driveable {
     }
   }
 
-  // Method to stop the vehicle
+  // TODO Method to stop the vehicle
   stop(): void {
     this.currentSpeed = 0;
     this.started = false;
     console.log('Vehicle stopped');
   }
 
-  // Method to turn the vehicle
+  // TODO Method to turn the vehicle
   turn(direction: string): void {
-    // Check if the vehicle is started
     if (this.started) {
       console.log(`Vehicle turned ${direction}`);
     } else {
@@ -64,9 +60,8 @@ class Vehicle implements Driveable {
     }
   }
 
-  // Method to reverse the vehicle
+  // TODO Method to reverse the vehicle
   reverse(): void {
-    // Check if the vehicle is started
     if (this.started) {
       console.log('Vehicle reversed');
     } else {
@@ -75,5 +70,5 @@ class Vehicle implements Driveable {
   }
 }
 
-// Export the Vehicle class
+// TODO Export the Vehicle class
 export default Vehicle;

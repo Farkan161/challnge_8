@@ -76,7 +76,6 @@ class Truck extends Vehicle implements AbleToTow{
 
   // TODO: Override the printDetails method from the Vehicle class
   override printDetails(): void {
-    // Call the printDetails method of the parent class, Vehicle
     super.printDetails();
     // TODO: The method should call the printDetails method of the parent class
     // TODO: The method should log the details of the Truck

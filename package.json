@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "init": "^0.1.2",
     "inquirer": "^9.2.19",
     "typescript": "^5.4.5"
   },
